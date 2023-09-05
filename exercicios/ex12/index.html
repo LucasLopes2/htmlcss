@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este sites em vários dispositivos diferentes, ou aumenta e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzinho aúdio</h1>
+    <p>Vamos aprender reproduzir aúdios em HTML5</p>
+   
+    <audio preload="metadata" autoplay controls>
+        <source src="midiahmtl/Guess I_ll Never Know.wav - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midiahmtl/Guess I_ll Never Know.wav - TrackTribe.ogg" type="audio/ogg">
+       <source src="midiahmtl/Guess I_ll Never Know.wav - TrackTribe.wavw" type="audio/wav">
+    </audio>
+    <p>Infelizmente o seu navegador não consegue reproduzir o aúdio. <a href="midiahmtl/Guess I_ll Never Know.wav - TrackTribe.mp3"> Clique no link e faça donwload.</a>
+    </p>
+</html>

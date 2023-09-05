@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <style>
+    a{
+        font-weight: normal;
+        text-decoration: none;
+        color: rgb(6, 128, 168);
+    }
+    a:hover{
+        width: 200px;
+        text-decoration: underline;
+        color: red;
+    }
+    a::before{
+        content: ' ↠';
+    }
+    a::after{
+      content: ' ↞';
+    }
+    a:active{
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://github.com/LucasFutureDev">GitHub</a></li>
+        <li><a href="https://www.instagram.com/lucaslopes296/">Instagram</a></li>
+    </ul>
+</body>
+</html>
