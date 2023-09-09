@@ -1,6 +1,9 @@
 @charset "utf-8";
 body{
-   
+    margin: auto;
+  max-width: 850px;
+  min-widht:auto;
+
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     padding: 6px;
@@ -66,6 +69,7 @@ aside{
 
 }
 #link2{
+    
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -81,7 +85,7 @@ aside{
     background-color: rgba(255, 255, 255, 0.815);
 }
 .titulo{
-     padding: 0px 0px 0px 0px;
+     padding: 0px 0px 0px 1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3em;
     font: bold;
@@ -112,4 +116,10 @@ footer p{
 .lucas >a:hover{
     text-decoration: underline;
     color: rgb(185, 103, 117);
+}
+.email{
+    
+    max-width: 0%;
+    min-width: 77%;
+
 }
