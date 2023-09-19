@@ -9,20 +9,38 @@
 
     }
     table{
+        position: relative;
         border-collapse: collapse;
         width: 500px;
     }
     td, th{
+        padding: 5px;
         padding-left: 7px;
         border: 1px solid black;
     }
     thead , tfoot{
-        background-color: gray;
+        background-color: rgb(34, 34, 34);
         color: white;
+    }
+    thead > tr > th{
+        position: sticky;
+        top: 0;
+        background-color:rgb(34, 34, 34) ;
     }
     td.num{
         text-align: right;
     }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    tbody > tr:nth-child(odd){
+        background-color: lightgray;
+    }
+   
+    
 </style>
     <title>Tabelas</title>    
 </head>
@@ -37,10 +55,11 @@
         TFOOT
             TR,TD,TH-->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:  50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -155,10 +174,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>203.062.512</strong</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat praesentium voluptates tempore recusandae at mollitia quis ducimus aspernatur accusantium suscipit architecto, exercitationem vero error sapiente veniam et aut  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam animi quidem mollitia facere? Dignissimos facilis suscipit, magnam cum veritatis laborum tempora ab non sit repudiandae architecto nam aliquid earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam consequuntur eum id, omnis vitae doloremque ex repudiandae enim cum impedit, placeat suscipit, sint ipsa rerum iusto magnam mollitia magni unde? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis quod asperiores sit minus nisi? Voluptatem explicabo voluptatibus earum architecto laboriosam, est itaque optio ab error nobis unde, nisi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse nihil commodi facilis officia, fugiat sunt voluptatum odio vitae possimus distinctio nemo incidunt id velit assumenda sed, voluptatibus qui. Incidunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat praesentium voluptates tempore recusandae at mollitia quis ducimus aspernatur accusantium suscipit architecto, exercitationem vero error sapiente veniam et aut  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam animi quidem mollitia facere? Dignissimos facilis suscipit, magnam cum veritatis laborum tempora ab non sit repudiandae architecto nam aliquid earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam consequuntur eum id, omnis vitae doloremque ex repudiandae enim cum impedit, placeat suscipit, sint ipsa rerum iusto magnam mollitia magni unde? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis quod asperiores sit minus nisi? Voluptatem explicabo voluptatibus earum architecto laboriosam, est itaque optio ab error nobis unde, nisi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse nihil commodi facilis officia, fugiat sunt voluptatum odio vitae possimus distinctio nemo incidunt id velit assumenda sed, voluptatibus qui. Incidunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat praesentium voluptates tempore recusandae at mollitia quis ducimus aspernatur accusantium suscipit architecto, exercitationem vero error sapiente veniam et aut  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam animi quidem mollitia facere? Dignissimos facilis suscipit, magnam cum veritatis laborum tempora ab non sit repudiandae architecto nam aliquid earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam consequuntur eum id, omnis vitae doloremque ex repudiandae enim cum impedit, placeat suscipit, sint ipsa rerum iusto magnam mollitia magni unde? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis quod asperiores sit minus nisi? Voluptatem explicabo voluptatibus earum architecto laboriosam, est itaque optio ab error nobis unde, nisi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse nihil commodi facilis officia, fugiat sunt voluptatum odio vitae possimus distinctio nemo incidunt id velit assumenda sed, voluptatibus qui. Incidunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat praesentium voluptates tempore recusandae at mollitia quis ducimus aspernatur accusantium suscipit architecto, exercitationem vero error sapiente veniam et aut  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam animi quidem mollitia facere? Dignissimos facilis suscipit, magnam cum veritatis laborum tempora ab non sit repudiandae architecto nam aliquid earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam consequuntur eum id, omnis vitae doloremque ex repudiandae enim cum impedit, placeat suscipit, sint ipsa rerum iusto magnam mollitia magni unde? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis quod asperiores sit minus nisi? Voluptatem explicabo voluptatibus earum architecto laboriosam, est itaque optio ab error nobis unde, nisi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse nihil commodi facilis officia, fugiat sunt voluptatum odio vitae possimus distinctio nemo incidunt id velit assumenda sed, voluptatibus qui. Incidunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat praesentium voluptates tempore recusandae at mollitia quis ducimus aspernatur accusantium suscipit architecto, exercitationem vero error sapiente veniam et aut  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam animi quidem mollitia facere? Dignissimos facilis suscipit, magnam cum veritatis laborum tempora ab non sit repudiandae architecto nam aliquid earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam consequuntur eum id, omnis vitae doloremque ex repudiandae enim cum impedit, placeat suscipit, sint ipsa rerum iusto magnam mollitia magni unde? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis quod asperiores sit minus nisi? Voluptatem explicabo voluptatibus earum architecto laboriosam, est itaque optio ab error nobis unde, nisi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse nihil commodi facilis officia, fugiat sunt voluptatum odio vitae possimus distinctio nemo incidunt id velit assumenda sed, voluptatibus qui. Incidunt.</p>
 </body>
 </html>
