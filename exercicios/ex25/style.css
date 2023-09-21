@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+table{
+    border-collapse: collapse;
+    font-family: arial;
+}
+caption{
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding: 8px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+
+}
+.cname{
+    background-color: chartreuse;
+}
