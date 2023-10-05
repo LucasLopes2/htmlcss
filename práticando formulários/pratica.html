@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática</title>
+</head>
+<body>
+    <h1>Práticando os formulários , que aprendi no curso</h1>
+    <form action="cadastro.js" method="POST" autocomplete="off">
+
+        <p>
+            <label for="name">Digite seu nome completo:</label>
+            <input type="text" name="nm" id="name" required>
+        </p>
+        <p>
+            <label for="senha">Digite uma senha:</label>
+            <input type="password" name="sh" id="senha" minlength="0" maxlength="30" required>
+        </p>
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="caclIdade()">
+        </p>
+        <p>
+            <label for="idd">Sua idade então é</label>
+            <output id="idad">0</output>
+        </p>
+       
+        <p>
+            <label for="imes">Mês do nascimento:</label>
+            <input type="number" name="mes" id="imes" min="01" max="12" required>
+        </p>
+        <p>
+            <label for="day">Dia do seu nascimento</label>
+            <input type="number" name="Dia" id="day" min="1" max="30" required>
+        </p>
+        <p>
+            <label for="tel">Seu número de Telefone:</label>
+            <input type="tel" name="tell" id="tel" required autocomplete="tel">
+        </p>
+        <p>
+            <label for="email">Digite um E-mail:</label>
+            <input type="email" name="imail" id="email" placeholder="formularioshtml@gmail.com" required>
+        </p>
+      
+            <p>
+                <label for="cores">Sua cor preferida?</label>
+                <input type="color" name="cor" id="cores" value="#0000ff" required>
+            </p>
+            <fieldset>
+                <legend>Escolha</legend>
+                <p>
+                    <label for="rad">Futebol</label>
+                    <input type="radio" name="rad" id="rad" required>
+                    <label for="java">Java Script</label>
+                    <input type="radio" name="rad" id="java" required>
+                </p>
+            </fieldset>
+            <p>
+                <label for="ft">Sua foto:</label>
+                <input type="file" name="fts" id="ft" required>
+            </p>
+            <p>
+                <label for="rang">Sua satisfação do formulário</label>
+                <input type="range" name="rg" id="rang" required min="0" max="10" value="5" oninput="satis.innerHTML = Number(rang.value)">
+                <output id="satis">5</output>
+            </p>
+            <p>
+                <label for="msg">Deixe sua mensagem</label> <br>
+                <textarea name="msgs" id="msg" cols="30" rows="10"></textarea>
+            </p>
+          <p> 
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+        </p>
+        <p>
+            <label for="checkbox">Acabou os formulários aprendidos do Curso</label>
+            <input type="checkbox" name="idd" id="idad">
+        </p>
+
+    </form>
+    <script>
+        function caclIdade() {
+           let atual = new Date().getFullYear()
+           idad.innerHTML = Number(atual) - Number(iano.value)
+       }   
+   </script>
+</body>
+</html>
