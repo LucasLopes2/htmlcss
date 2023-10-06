@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Prática de Formulários</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+
+        <p>
+            <label for="usu">Nome de Usuário:</label>
+            <input type="text" name="usua" id="usu" required placeholder="Digite seu Nome Completo">
+        </p>
+        <p>
+            <label for="sen">Coloque sua Senha:</label>
+            <input type="password" name="senha" id="sen" required minlength="1" maxlength="50" placeholder="Apenas números!">
+        </p>
+
+        <p>
+            <label for="Date">Data de Nascimento</label>
+            <input type="date" name="date" id="date" required>
+        </p>
+    
+        <p>
+            <label for="rang">Seu nivel de satisfeito</label>
+            <input type="range" name="sati" id="rang" required min="0" max="10" value="5" oninput="satis.innerHTML = Number(rang.value)">
+            <output id="satis">5</output>
+        </p>
+
+        
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+        </p>
+    </form>
+</body>
+</html>
